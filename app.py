@@ -2,6 +2,8 @@ import webbrowser
 
 import streamlit as st
 
+from pessoal import *
+
 
 class Main():
     
@@ -13,35 +15,35 @@ class Main():
             menu_items=None
         )
         st.title("Maykoll Rocha - Portifólio")
-       # Adicionar uma imagem
-        st.image("imgs/eu.jpeg", caption="Maykoll Rocha", width=100)
-        st.subheader("Contatos")
-        itens = ["Email: maykoll1412@gmail.com", "Telefone: (18) 9 9699-3996", "Cidade: Doutados - MS", "Profifisão: Desempregado"]
-        for item in itens:
-            st.write(f"* {item}")
-        # Adicionar um link para um PDF
-        if st.button("Dowlond Curriculo"):
-            webbrowser.open_new_tab("https://drive.google.com/file/d/1EaaRBFIIya1WIDCC5A9rA3FkIJ2WcXbw/view?usp=drive_link")
+        col1, col2, col3,col4 = st.columns([1,2,2,1]) # Divide the layout into two columns
+        
+        # Column 1 (left side) - Image
+        with col2:
+            st.image("imgs/eu.jpeg", width=150)
+
+        # Column 2 (right side) - Contacts and PDF link
+        with col3:
+            st.subheader("Contatos")
+            itens = ["Email: maykoll1412@gmail.com", "Telefone: +55 (18) 9 9699-3996", "Cidade: Doutados - MS","Cursando: Engenharia de Computação"]
+            string = ""
+            for item in itens:
+                string += f"""* {item}  \n"""
+            st.write(string)
+            # PDF Download Button
+            if st.button("Download Currículo"):
+                webbrowser.open_new_tab("https://drive.google.com/file/d/1el_CYCvMjbi2Sy7t9P4ZLLUQBLZlj5u6/view?usp=drive_link")
+            
         self.side_bar() 
 
     def side_bar(self):
 
-        if  st.sidebar.button("Sobre Mim"):
-            self.pagina_sobre_mim()
+        if st.sidebar.button("Sobre Mim"):
+            SobreMin()
+            
         st.sidebar.header("Tabalhos")
-    
-    # Função para exibir a página "Sobre Mim"
-    def pagina_sobre_mim(self):
-        st.subheader('Sobre Mim')
-        st.write( """
-                Meu nome completo é Maykoll Rocha nascido em junqueirópolis interior de São Paulo, no Oeste Paulista, tenho 
-                21 anos nascido no dia 17 de julho de 2002 e curso engenharia de computação, meu enfoque dos estudos em engenharia
-                de dado, gosto de trabalhar com essa parte de gerencia e analise exploratória por conta do envolvimento
-                matemático.
-                """)
         
         
-
+        
     # Função para exibir a página "Meus Estudos"
     def pagina_meus_estudos(self):
         st.subheader('Meus Estudos')
@@ -51,6 +53,6 @@ class Main():
     def pagina_trabalho(self):
         st.subheader('Trabalho')
         st.write("Esta é a página 'Trabalho'. Aqui você pode colocar informações sobre seu trabalho.")
-
+        
 
 Main()
