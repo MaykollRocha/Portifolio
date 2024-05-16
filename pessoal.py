@@ -37,7 +37,7 @@ class SobreMin():
                   ["DATA SCIENCE ACADEMY(DSA)",[["Introdução à Ciência de Dados 3.0","Concluido","2022"],["Fundamentos de Linguagem Python Para Análise de Dados e Data Science","Concluido","2023"]],"Online"]]
         self.imprimir_curso(curso_cary)
         
-        st.header("Exeperencias de trabalho")
+        st.header("Experiências de trabalho")
         #Adicinar mais trabalhos
         #0 : Nome do estabelecimento
         #1 : Cidade
