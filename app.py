@@ -1,3 +1,5 @@
+import webbrowser
+
 import streamlit as st
 
 
@@ -10,20 +12,23 @@ class Main():
             initial_sidebar_state="expanded",
             menu_items=None
         )
-        st.title('Maykoll Rocha - Portifolio Pessoal')
-
+        st.title("Maykoll Rocha - Portifólio")
+       # Adicionar uma imagem
+        st.image("imgs/eu.jpeg", caption="Maykoll Rocha", width=100)
+        st.subheader("Contatos")
+        itens = ["Email: maykoll1412@gmail.com", "Telefone: (18) 9 9699-3996", "Cidade: Doutados - MS", "Profifisão: Desempregado"]
+        for item in itens:
+            st.write(f"* {item}")
+        # Adicionar um link para um PDF
+        if st.button("Dowlond Curriculo"):
+            webbrowser.open_new_tab("https://drive.google.com/file/d/1EaaRBFIIya1WIDCC5A9rA3FkIJ2WcXbw/view?usp=drive_link")
         self.side_bar() 
 
     def side_bar(self):
-        
-        if st.sidebar.button("Sobre Mim"):
+
+        if  st.sidebar.button("Sobre Mim"):
             self.pagina_sobre_mim()
-
-        if st.sidebar.button("Meus Estudos"):
-            self.pagina_meus_estudos()
-
-        if st.sidebar.button("Trabalho"):
-           self.pagina_trabalho()
+        st.sidebar.header("Tabalhos")
     
     # Função para exibir a página "Sobre Mim"
     def pagina_sobre_mim(self):
@@ -34,10 +39,7 @@ class Main():
                 de dado, gosto de trabalhar com essa parte de gerencia e analise exploratória por conta do envolvimento
                 matemático.
                 """)
-        st.subheader("Contatos")
-        itens = ["Email: maykoll1412@gmail.com", "Telefone: (18) 9 9699-3996", "Cidade: Doutados - MS", "Profifisão: Desempregado"]
-        for item in itens:
-            st.write(f"* {item}")
+        
         
 
     # Função para exibir a página "Meus Estudos"
