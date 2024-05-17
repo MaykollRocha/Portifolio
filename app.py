@@ -2,7 +2,8 @@ import webbrowser
 
 import streamlit as st
 
-from pessoal import *
+from paginas.pessoal import *
+from paginas.Trabalhos_C import *
 
 
 class Main():
@@ -32,15 +33,15 @@ class Main():
             # PDF Download Button
             if st.button("Download Currículo"):
                 webbrowser.open_new_tab("https://drive.google.com/file/d/1el_CYCvMjbi2Sy7t9P4ZLLUQBLZlj5u6/view?usp=drive_link")
-            
         self.side_bar() 
 
     def side_bar(self):
-
         if st.sidebar.button("Sobre Mim"):
             SobreMin()
-            
         st.sidebar.header("Tabalhos")
+        if st.sidebar.button("C"):
+            Trabalhos_C()      
+        
         
         
         
