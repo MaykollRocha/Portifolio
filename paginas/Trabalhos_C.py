@@ -26,7 +26,7 @@ class Trabalhos_C():
                             {codigo[2]}
                             """)
                 if codigo[3] != 0:   
-                    st.image(f"imgs\{codigo[3][0]}",caption=codigo[3][1])
+                    st.image(f"imgs/{codigo[3][0]}",caption=codigo[3][1])
                 st.markdown(f"""
                             :red[Visão sobre como foi o projeto]:  
                             {codigo[4]}
