@@ -26,12 +26,20 @@ class Trabalhos_C():
                             {codigo[2]}
                             """)
                 if codigo[3] != 0:   
-                    st.image(f"imgs/{codigo[3][0]}",caption=codigo[3][1])
+                    for i in codigo[3]:
+                        st.image(f"imgs/{i[0]}",caption=i[1])
+                if codigo[4] != 0: 
+                    cont = 1                      
+                    for i in codigo[4]:
+                        st.subheader(f"{cont}. {i[0]}")
+                        st.code(i[1])
+                        st.markdown(i[2])
+                        cont+= 1;
                 st.markdown(f"""
                             :red[Visão sobre como foi o projeto]:  
-                            {codigo[4]}
+                            {codigo[5]}
                             """)
-                st.markdown(f"Para mais informações: [GitHub Atividade]({codigo[5]})")
+                st.markdown(f"Para mais informações: [GitHub Atividade]({codigo[6]})")
         
             
         
