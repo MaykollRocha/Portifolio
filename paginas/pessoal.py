@@ -44,35 +44,40 @@ class SobreMin():
         self.imprimir_linguagens()
     
     def imprimir_estudo(self):
-        for i in estudos:
+        for estudo in estudos:
             st.markdown(f"""
-                        **{i[0]}**  
-                        :blue[_{i[1]}_]  
-                        {i[2]}, {i[3]}  
+                        **{estudo['instituicao']}**  
+                        :blue[_{estudo['curso']}_]  
+                        {estudo['grau']}, {estudo['periodo']}  
                         """)
     def imprimir_curso(self):
         for curso in curso_cary:
             aux = ""
-            for materias in curso[1]:
-                aux += f""":blue[{materias[0]}] _{materias[1]}_, {materias[2]}  \n"""
-            string = f"""**{curso[0]}**  
-                    {aux}:orange[Tipo]: {curso[2]}  
+            for materia in curso["materias"]:
+                aux += f""":blue[{materia['materia']}] _{materia['status']}_, {materia['periodo']}  \n"""
+            string = f"""**{curso['instituicao']}**  
+                    {aux}:orange[Modalidade]: {curso['modalidade']}  
                     """
             st.markdown(string)
+
 
     def imprimir_trabalhos(self):
         for trabalho in trabalhos:
             st.markdown(f"""
-            **{trabalho[0]}**  
-            :orange[Cidade]: {trabalho[1]}  
-            :orange[Data]: {trabalho[2]}  
-            :orange[Trabalho]  
-            {trabalho[3]}
+            **{trabalho['estabelecimento']}**  
+            :orange[Cidade]: {trabalho['cidade']}  
+            :orange[Período]: {trabalho['periodo']}  
+            :orange[Descrição da Função]  
+            {trabalho['descricao']}
             """)
+
     def imprimir_linguagens(self):
-        for i in linguagens:
-            st.markdown(f""":blue[Linguagens]: {i[0]}  
-                            :blue[Ano que começou]: {i[1]}  
-                            :blue[Descrição e opinião]  
-                            {i[2]}""")
+        for linguagem in linguagens:
+            st.markdown(f"""
+            :blue[Linguagem]: {linguagem['nome']}  
+            :blue[Ano que começou]: {linguagem['ano']}  
+            :blue[Descrição e opinião]  
+            {linguagem['descricao']}
+            """)
+
     

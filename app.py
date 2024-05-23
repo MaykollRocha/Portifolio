@@ -13,7 +13,6 @@ class Main():
             page_icon=None ,
             layout="wide",
             initial_sidebar_state="expanded",
-            menu_items=None
         )
         st.title("Maykoll Rocha - Portifólio")
         col1, col2, col3,col4 = st.columns([1,2,2,1]) # Divide the layout into two columns

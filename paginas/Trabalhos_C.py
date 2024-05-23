@@ -1,6 +1,6 @@
 
-import webbrowser
 
+import requests
 import streamlit as st
 
 from paginas.Globais import *
@@ -10,36 +10,7 @@ class Trabalhos_C():
     
     def __init__ (self):
         self.texto_inicio()
-        options = ['Option 1', 'Option 2', 'Option 3']
-
-        for codigo in codigo_c:
-            with st.expander(f"{codigo[0]}"):
-                st.markdown(f"""
-                            :blue[Materia]: {codigo[1][0]}  
-                            :blue[Data]: {codigo[1][1]}  
-                            :blue[Local]: {f"{codigo[1][2]}" if codigo[1][2] else " "}  
-                            {f":blue[Professor]: {codigo[1][3]}  " if codigo[1][3] else " "}
-                            {f":blue[Nota]: {codigo[1][4]}  " if codigo[1][4] else " "} 
-                            """)
-                st.markdown(f"""
-                            :red[Projeto]:  
-                            {codigo[2]}
-                            """)
-                if codigo[3] != 0:   
-                    for i in codigo[3]:
-                        st.image(f"imgs/{i[0]}",caption=i[1])
-                if codigo[4] != 0: 
-                    cont = 1                      
-                    for i in codigo[4]:
-                        st.subheader(f"{cont}. {i[0]}")
-                        st.code(i[1])
-                        st.markdown(i[2])
-                        cont+= 1;
-                st.markdown(f"""
-                            :red[Visão sobre como foi o projeto]:  
-                            {codigo[5]}
-                            """)
-                st.markdown(f"Para mais informações: [GitHub Atividade]({codigo[6]})")
+        self.criate_works()
         
             
         
@@ -53,6 +24,50 @@ Durante meus estudos acadêmicos, enfrentei quatro projetos desafiadores que me 
 4. **Implementação de um jogo de ping-pong usando MPI:** Trabalhei com a interface de passagem de mensagens (MPI) para criar um jogo de ping-pong, o que exigiu uma compreensão avançada de comunicação entre processos.  
 Esses projetos, em especial, foram fundamentais para o meu desenvolvimento como programador. Cada um deles me desafiou de maneiras únicas e contribuíram significativamente para minha formação acadêmica e profissional.  
                     """)
-        
+    
+    def criate_works(self):
+        for data in urls:
+            response = requests.get(f"https://raw.githubusercontent.com/MaykollRocha/{data}/data.dat")
+
+            # Verificar se a requisição foi bem-sucedida (código de status 200)
+            if response.status_code == 200:
+                dat_content = response.text
+
+                try:
+                    # Usar eval() para converter a string do arquivo em um dicionário Python
+                    codigo = eval(dat_content)
+                except SyntaxError as e:
+                    continue
+            else:
+                continue
+
+            with st.expander(f"{codigo['titulo']}"):
+                st.markdown(f"""
+                            :blue[Materia]: {codigo['info']['materia']}  
+                            :blue[Data]: {codigo['info']['data']}  
+                            :blue[Local]: {f"{codigo['info']['local']}" if codigo['info']['local'] else " "}  
+                            {f":blue[Professor]: {codigo['info']['professor']}  " if codigo['info']['professor'] else " "}
+                            {f":blue[Nota]: {codigo['info']['nota']}  " if codigo['info']['nota'] else " "} 
+                            """)
+                st.markdown(f"""
+                            :red[Projeto]:  
+                            {codigo['descricao']}
+                            """)
+                if codigo['imag']:   
+                    for img in codigo['imag']:
+                        st.image(f"imgs/{img['nome']}", caption=img['rodape'])
+                if codigo['codigos']: 
+                    cont = 1                      
+                    for cod in codigo['codigos']:
+                        st.subheader(f"{cont}. {cod['motivo']}")
+                        st.code(cod['codigo'], language="c", line_numbers=True)
+                        st.markdown(cod['descricao'])
+                        cont += 1
+                st.markdown(f"""
+                            :red[Visão sobre como foi o projeto]:  
+                            {codigo['agregamento']}
+                            """)
+                st.markdown(f"Para mais informações: [GitHub da Atividade]({codigo['Link']})")
+        codigo = 0
         
         
