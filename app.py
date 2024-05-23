@@ -41,18 +41,5 @@ class Main():
         if st.sidebar.button("C"):
             Trabalhos_C()      
         
-        
-        
-        
-    # Função para exibir a página "Meus Estudos"
-    def pagina_meus_estudos(self):
-        st.subheader('Meus Estudos')
-        st.write("Esta é a página 'Meus Estudos'. Aqui você pode colocar informações sobre seus estudos.")
-
-    # Função para exibir a página "Trabalho"
-    def pagina_trabalho(self):
-        st.subheader('Trabalho')
-        st.write("Esta é a página 'Trabalho'. Aqui você pode colocar informações sobre seu trabalho.")
-        
 
 Main()
