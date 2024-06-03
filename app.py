@@ -4,6 +4,7 @@ import streamlit as st
 
 from paginas.pessoal import *
 from paginas.Trabalhos_C import *
+from paginas.Trabalhos_Py import *
 
 
 class Main():
@@ -39,7 +40,10 @@ class Main():
             SobreMin()
         st.sidebar.header("Tabalhos")
         if st.sidebar.button("C"):
-            Trabalhos_C()      
+            Trabalhos_C()  
+        if st.sidebar.button("Python"):
+            Trabalhos_Py()    
+        
         
 
 Main()
