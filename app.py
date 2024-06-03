@@ -31,7 +31,7 @@ class Main():
             st.write(string)
             # PDF Download Button
             if st.button("Download Currículo"):
-                webbrowser.open_new_tab("https://drive.google.com/file/d/1el_CYCvMjbi2Sy7t9P4ZLLUQBLZlj5u6/view?usp=drive_link")
+                webbrowser.open_new_tab("https://drive.google.com/file/d/1-KDWmFwKy4qDxzKCxZkLxGCcPB40OfEB/view?usp=sharing")
         self.side_bar() 
 
     def side_bar(self):
