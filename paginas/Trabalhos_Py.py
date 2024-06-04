@@ -31,3 +31,46 @@ Dessa forma, poderei mostrar minhas habilidades de programação de forma indepe
   
 Com essa abordagem,nessa sessão de Python deixarei só minha programação em python evidente nada alem disso.  
                     """)
+
+        st.subheader("Trabalhos finais da FreecCodeCamp")
+        st.markdown("Os projetos que apresentarei nessa sessãos seram o da freeCodeCamp, em questão só as provas do curso não vou apresentar os desenvolvidos na aulas porem na mesma pasta tem os desenvolvidos na pasta.")
+        self.criate_works()
+    
+    
+    
+    def criate_works(self):
+        urls = ["https://github.com/MaykollRocha/estudos_python/raw/main/FCC/Python%201%20of%205/data.bat",
+                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%202%20of%205/data.bat"]
+        for data in urls:
+            response = requests.get(data)
+
+            # Verificar se a requisição foi bem-sucedida (código de status 200)
+            if response.status_code == 200:
+                dat_content = response.text
+
+                try:
+                    # Usar eval() para converter a string do arquivo em um dicionário Python
+                    codigo = eval(dat_content)
+                except SyntaxError as e:
+                    continue
+            else:
+                st.markdown("não tem nada")
+            
+            with st.expander(f"{codigo['nome']}"):
+                st.markdown(f"""
+                            :blue[Projeto titulo]: {codigo['infos']['atividade']}  
+                            :blue[Data]: {codigo['infos']['dia']}  
+                            """)
+                st.markdown(f"""
+                            :red[Projeto]:  
+                            {codigo['descrição']}
+                            """)
+                st.markdown(f""":red[Código]:  """)
+                st.code(codigo['Código'], language="py", line_numbers=True)
+                st.markdown(f""":red[Output]:  """)
+                st.image(f"imgs/{codigo['imag']}")
+                st.markdown(f"""
+                            :red[Visão sobre como foi o projeto]:  
+                            {codigo['agregamento']}
+                            """)
+                st.markdown(f"Para mais informações: [GitHub da Atividade]({codigo['link']})")

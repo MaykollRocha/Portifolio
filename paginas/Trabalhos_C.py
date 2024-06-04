@@ -26,6 +26,12 @@ Esses projetos, em especial, foram fundamentais para o meu desenvolvimento como 
                     """)
     
     def criate_works(self):
+        urls = ["Atividades_Faculade/main/Star_Wars",
+                "Atividades_Faculade/main/Arquitetura_Mapeamentos",
+                "MPI_PingPong/main",
+                "Trabalhos_SO/main",
+                "Jogo_da_cobrinha/main",
+                "Calculadora_Binaria/main"]
         for data in urls:
             response = requests.get(f"https://raw.githubusercontent.com/MaykollRocha/{data}/data.dat")
 

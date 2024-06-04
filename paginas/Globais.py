@@ -34,7 +34,8 @@ curso_cary = [
         "instituicao": "DATA SCIENCE ACADEMY (DSA)",
         "materias": [
             {"materia": "Introdução à Ciência de Dados 3.0", "status": "Concluído", "periodo": "2022"},
-            {"materia": "Fundamentos de Linguagem Python Para Análise de Dados e Data Science", "status": "Concluído", "periodo": "2023"}
+            {"materia": "Fundamentos de Linguagem Python Para Análise de Dados e Data Science", "status": "Concluído", "periodo": "2023"},
+            {"materia": "Fundamentos de Engenharia de Dados", "status": "Concluído", "periodo": "2024"}
         ],
         "modalidade": "Online"
     }
@@ -47,8 +48,20 @@ trabalhos = [
     {
         "estabelecimento": "Kumon - Donomae",
         "cidade": "Dourados - Mato Grosso do Sul",
-        "periodo": "meio de 2021 - início de 2022",
+        "periodo": "meio de 2023 - setembro de 2023",
         "descricao": "Auxiliar os professores na correção de materiais acadêmicos e ajudar alunos no conhecimento de conteúdos da minha área."
+    },
+    {
+        "estabelecimento": "Monitor UFGD - Calulo II",
+        "cidade": "Dourados - Mato Grosso do Sul",
+        "periodo": "Junho de 2023 - início de 2023",
+        "descricao": "Auxiliar os professores na correção de materiais acadêmicos e ajudar alunos no conhecimento de conteúdos da minha área."
+    },
+    {
+        "estabelecimento": "Monitor UFGD - Calculo Numérico",
+        "cidade": "Dourados - Mato Grosso do Sul",
+        "periodo": "Maio de 2024 - Julho de 2024",
+        "descricao": "Auxiliar os alunos com a metéria de calculo númerico, essa foi ofertada na Engenharia de Produção, caso tenha dúvidas ou problemas com o conteudo."
     }
 ]
 
@@ -76,9 +89,3 @@ linguagens = [
     }
 ]
 
-urls = ["Atividades_Faculade/main/Star_Wars",
-        "Atividades_Faculade/main/Arquitetura_Mapeamentos",
-        "MPI_PingPong/main",
-        "Trabalhos_SO/main",
-        "Jogo_da_cobrinha/main",
-        "Calculadora_Binaria/main"]
