@@ -15,7 +15,7 @@ class Main():
             layout="wide",
             initial_sidebar_state="expanded",
         )
-        st.title("Maykoll - Portifólio")
+        st.title("Maykoll Rocha - Portifólio")
         st.text("O portifolio ainda está em desenvolvimneto.")
         col1, col2, col3,col4 = st.columns([1,2,2,1]) # Divide the layout into two columns
         
