@@ -77,7 +77,8 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
                 st.markdown(f""":red[Código]:  """)
                 st.code(self.puxar_codigo(codigo['Código']), language="py", line_numbers=True)
                 st.markdown(f""":red[Output]:  """)
-                st.image(f"imgs/{codigo['imag']}")
+                for imag in codigo['imag']:
+                    st.image(f"imgs/{imag}")
                 st.markdown(f"""
                             :red[Visão sobre como foi o projeto]:  
                             {codigo['agregamento']}
