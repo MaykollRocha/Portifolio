@@ -36,7 +36,12 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
         st.markdown("Os projetos que apresentarei nessa sessãos seram o da freeCodeCamp, em questão só as provas do curso não vou apresentar os desenvolvidos na aulas porem na mesma pasta tem os desenvolvidos na pasta.")
         self.criate_works()
     
-    
+    def puxar_codigo(self,caminho):
+        response = requests.get(caminho)
+        if response.status_code == 200:
+            return response.text
+        else:
+            return 'Não tem codigo'
     
     def criate_works(self):
         urls = ["https://github.com/MaykollRocha/estudos_python/raw/main/FCC/Python%201%20of%205/data.bat",
@@ -68,7 +73,7 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
                             {codigo['descrição']}
                             """)
                 st.markdown(f""":red[Código]:  """)
-                st.code(codigo['Código'], language="py", line_numbers=True)
+                st.code(self.puxar_codigo(codigo['Código']), language="py", line_numbers=True)
                 st.markdown(f""":red[Output]:  """)
                 st.image(f"imgs/{codigo['imag']}")
                 st.markdown(f"""
