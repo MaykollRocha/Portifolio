@@ -40,6 +40,12 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
                 "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%204%20of%205/data.dat",
                 "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%205%20of%205/data.dat"
                 ])
+        st.subheader("Projetos Usando a Biblioteca TKinter")
+        st.markdown("Os projetos que apresentarei nessa sessãos seram o da TKinter biblioteca gráfica que já utilizei uma boa quantidade de vez e tive muita evolução usando ela, o projeto em quetão que apresentarei são os mais relevantes")
+        self.criate_works(["https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/Metodos/data.dat"
+                ])
+        
+        
     
     def puxar_codigo(self,caminho):
         response = requests.get(caminho)
