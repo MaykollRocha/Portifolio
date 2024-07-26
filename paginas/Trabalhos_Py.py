@@ -44,7 +44,7 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
             return 'Não tem codigo'
     
     def criate_works(self):
-        urls = ["https://github.com/MaykollRocha/estudos_python/raw/main/FCC/Python%201%20of%205/data.bat",
+        urls = ["https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%201%20of%205/data.bat",
                 "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%202%20of%205/data.bat",
                 "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%205%20of%205/data.bat"
                 ]
