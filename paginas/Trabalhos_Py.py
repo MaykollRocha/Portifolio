@@ -34,7 +34,12 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
 
         st.subheader("Trabalhos finais da FreecCodeCamp")
         st.markdown("Os projetos que apresentarei nessa sessãos seram o da freeCodeCamp, em questão só as provas do curso não vou apresentar os desenvolvidos na aulas porem na mesma pasta tem os desenvolvidos na pasta.")
-        self.criate_works()
+        self.criate_works(["https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%201%20of%205/data.dat",
+                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%202%20of%205/data.dat",
+                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%203%20of%205/data.dat",
+                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%204%20of%205/data.dat",
+                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%205%20of%205/data.dat"
+                ])
     
     def puxar_codigo(self,caminho):
         response = requests.get(caminho)
@@ -43,13 +48,7 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
         else:
             return 'Não tem codigo'
     
-    def criate_works(self):
-        urls = ["https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%201%20of%205/data.dat",
-                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%202%20of%205/data.dat",
-                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%203%20of%205/data.dat",
-                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%204%20of%205/data.dat",
-                "https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/FCC/Python%205%20of%205/data.dat"
-                ]
+    def criate_works(self,urls):
         for data in urls:
             response = requests.get(data)
 
