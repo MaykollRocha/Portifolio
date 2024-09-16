@@ -32,17 +32,9 @@ Para rodar este portfólio localmente, siga os passos abaixo:
 
    Onde `app.py` é o nome do arquivo principal do seu aplicativo Streamlit.
 
-## 🛠️ Projetos
-
-Aqui estão alguns dos principais projetos incluídos no meu portfólio:
-
-- **Projeto 1**: Descrição breve do projeto, tecnologias usadas, e link para o repositório ou demonstração.
-- **Projeto 2**: Descrição breve do projeto, tecnologias usadas, e link para o repositório ou demonstração.
-- **Projeto 3**: Descrição breve do projeto, tecnologias usadas, e link para o repositório ou demonstração.
-
 ## 📧 Contato
 
-Para entrar em contato comigo, você pode me enviar um e-mail para: [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+Para entrar em contato comigo, você pode me enviar um e-mail para: [maykoll1412@gmail.com](mailto:maykoll1412@gmail.com).
 
 ## 📝 Licença
 
