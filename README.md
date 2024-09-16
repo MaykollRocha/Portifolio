@@ -1,2 +1,62 @@
-# Portifolio
-Portifolio pessoal usando streamlit do Python
+# Portfólio Pessoal
+
+Bem-vindo ao meu portfólio pessoal! Este é um projeto desenvolvido usando o Streamlit, uma biblioteca Python que facilita a criação de aplicações web interativas. Este portfólio exibe uma coleção de meus projetos e habilidades, permitindo que você veja de forma prática o que eu tenho desenvolvido e as tecnologias que utilizo.
+
+## 📂 Sobre
+
+Este portfólio foi criado para destacar meus projetos e habilidades em programação, ciência de dados, e desenvolvimento web. Aqui você encontrará informações detalhadas sobre os projetos em que trabalhei, incluindo descrições, tecnologias usadas, e links para acessar os projetos.
+
+## 🚀 Tecnologias Utilizadas
+
+- **Streamlit**: Para criar uma aplicação web interativa e fácil de usar.
+- **Python**: Linguagem principal utilizada para desenvolver os scripts e funcionalidades.
+- **HTML/CSS/JavaScript**: Tecnologias utilizadas em alguns projetos para frontend.
+- **Outras Tecnologias**: Dependendo dos projetos, pode incluir bibliotecas e ferramentas como Pandas, NumPy, Matplotlib, etc.
+
+## 📌 Instalação
+
+Para rodar este portfólio localmente, siga os passos abaixo:
+
+1. **Clone o Repositório**
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
+
+2. **Crie um Ambiente Virtual (opcional, mas recomendado)**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+   ```
+
+3. **Instale as Dependências**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Execute o Aplicativo**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+   Onde `app.py` é o nome do arquivo principal do seu aplicativo Streamlit.
+
+## 🛠️ Projetos
+
+Aqui estão alguns dos principais projetos incluídos no meu portfólio:
+
+- **Projeto 1**: Descrição breve do projeto, tecnologias usadas, e link para o repositório ou demonstração.
+- **Projeto 2**: Descrição breve do projeto, tecnologias usadas, e link para o repositório ou demonstração.
+- **Projeto 3**: Descrição breve do projeto, tecnologias usadas, e link para o repositório ou demonstração.
+
+## 📧 Contato
+
+Para entrar em contato comigo, você pode me enviar um e-mail para: [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+
+## 📝 Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
