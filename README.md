@@ -20,24 +20,11 @@ Para rodar este portfólio localmente, siga os passos abaixo:
 1. **Clone o Repositório**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/MaykollRocha/Portifolio.git
    cd seu-repositorio
    ```
 
-2. **Crie um Ambiente Virtual (opcional, mas recomendado)**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
-   ```
-
-3. **Instale as Dependências**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Execute o Aplicativo**
+2. **Execute o Aplicativo**
 
    ```bash
    streamlit run app.py
