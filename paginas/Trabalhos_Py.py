@@ -42,7 +42,8 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
                 ])
         st.subheader("Projetos Usando a Biblioteca TKinter")
         st.markdown("Os projetos que apresentarei nessa sessãos seram o da TKinter biblioteca gráfica que já utilizei uma boa quantidade de vez e tive muita evolução usando ela, o projeto em quetão que apresentarei são os mais relevantes")
-        self.criate_works(["https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/Metodos/data.dat"
+        self.criate_works(["https://raw.githubusercontent.com/MaykollRocha/estudos_python/main/Metodos/data.dat",
+                           "https://raw.githubusercontent.com/MaykollRocha/JogoDaVelhaMinMax/refs/heads/main/data.bat"
                 ])
         
         
