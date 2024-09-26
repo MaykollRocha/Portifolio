@@ -38,6 +38,14 @@ curso_cary = [
             {"materia": "Fundamentos de Engenharia de Dados", "status": "Concluído", "periodo": "2024"}
         ],
         "modalidade": "Online"
+    },
+    {
+        "instituicao": "Fundação Bradesco",
+        "materias": [
+            {"materia": "Introdução à Exel", "status": "Concluído", "periodo": "2022"},
+            {"materia": "Exel Intermediário", "status": "Concluído", "periodo": "2023"},
+        ],
+        "modalidade": "Online"
     }
 ]
 
@@ -85,7 +93,7 @@ linguagens = [
     {
         "nome": "VBA",
         "ano": "2024",
-        "descricao": "Em processo de utilização."
+        "descricao": "A partir do curso da Funação Bradesco, venho aprofundo minhas abilidades em Exel abrindo espaço para um maneira diferente de visualizar os dados em uma forma mais bruta e utilzar ferramentar mais simples para solicionar simples problemas."
     }
 ]
 
