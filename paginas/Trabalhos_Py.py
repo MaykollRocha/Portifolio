@@ -81,7 +81,11 @@ Com essa abordagem,nessa sessão de Python deixarei só minha programação em p
                             {codigo['descrição']}
                             """)
                 st.markdown(f""":red[Código]:  """)
-                st.code(self.puxar_codigo(codigo['Código']), language="py", line_numbers=True)
+                try:
+                    st.code(self.puxar_codigo(codigo['Código']), language="py", line_numbers=True)
+                except:
+                    st.code(codigo['Código'], language="py", line_numbers=True)
+                    
                 st.markdown(f""":red[Output]:  """)
                 for imag in codigo['imag']:
                     st.image(f"imgs/{imag}")
