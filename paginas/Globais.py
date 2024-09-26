@@ -42,8 +42,8 @@ curso_cary = [
     {
         "instituicao": "Fundação Bradesco",
         "materias": [
-            {"materia": "Introdução à Exel", "status": "Concluído", "periodo": "2022"},
-            {"materia": "Exel Intermediário", "status": "Concluído", "periodo": "2023"},
+            {"materia": "Introdução à Exel", "status": "Concluído", "periodo": "2024"},
+            {"materia": "Exel Intermediário", "status": "Concluído", "periodo": "2024"},
         ],
         "modalidade": "Online"
     }
@@ -60,7 +60,7 @@ trabalhos = [
         "descricao": "Auxiliar os professores na correção de materiais acadêmicos e ajudar alunos no conhecimento de conteúdos da minha área."
     },
     {
-        "estabelecimento": "Monitor UFGD - Calulo II",
+        "estabelecimento": "Mo  nitor UFGD - Calulo II",
         "cidade": "Dourados - Mato Grosso do Sul",
         "periodo": "Junho de 2023 - início de 2023",
         "descricao": "Auxiliar os professores na correção de materiais acadêmicos e ajudar alunos no conhecimento de conteúdos da minha área."
