@@ -10,7 +10,7 @@ from paginas.Trabalhos_Py import *
 class Main():
     
     def __init__(self) -> None:
-        st.set_page_config(page_title="Maykoll Rocha - Portifolio Pessoal",
+        st.set_page_config(page_title="Rian Carrasco- Portifolio Pessoal",
             page_icon=None ,
             layout="wide",
             initial_sidebar_state="expanded",
