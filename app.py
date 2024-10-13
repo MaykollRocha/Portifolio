@@ -37,18 +37,17 @@ class Main():
         self.side_bar() 
 
     def side_bar(self):
-        with st.sidebar :
-            if st.button("Sobre Mim"):
-                SobreMin()
-            st.header("Tabalhos")
-            if st.button("C"):
-                Trabalhos_C()  
-            if st.button("Python"):
-                Trabalhos_Py()    
-                
-            st.header("Data Ciencie")
-            if st.sidebar.button("Estudos Guiados"):
-                EstudoGuiados() 
+        if st.sidebar.button("Sobre Mim"):
+            SobreMin()
+        st.sidebar.header("Tabalhos")
+        if st.sidebar.button("C"):
+            Trabalhos_C()  
+        if st.sidebar.button("Python"):
+            Trabalhos_Py()    
+            
+        st.sidebar.header("Data Ciencie")
+        if st.sidebar.button("Estudos Guiados"):
+            EstudoGuiados() 
             
 if __name__ == "__main__":
     Main()
