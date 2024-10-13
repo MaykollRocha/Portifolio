@@ -21,10 +21,10 @@ Minhas pesquisas concentram-se principalmente em algoritmos de Machine Learning 
                     ''')
 
         for pesq in pesquisas:
-            st.title(pesq['Titlo'])
-            st.markdown(pesq['Descrição'])
             st.markdown(f"""
-                        Documento PDF: [{pesq['Titlo']}]({pesq['LinkPDF']})
-                        Documento PDF: [Colaboratorio]({pesq['Colaboratory']})
+                        ### {pesq['Titlo']}  
+                        {pesq['Descrição']}  
+                        Documento PDF: [{pesq['Titlo']}]({pesq['LinkPDF']})  
+                        Documento PDF: [Colaboratorio]({pesq['Colaboratory']})  
                     
                         """)
