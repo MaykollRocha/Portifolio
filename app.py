@@ -51,7 +51,7 @@ class Main():
             EstudoGuiados()
         
         if st.sidebar.button("Pesquisa Autonamas"):
-            Pesquisas()
+            EstudoGuiados()
          
             
 if __name__ == "__main__":
