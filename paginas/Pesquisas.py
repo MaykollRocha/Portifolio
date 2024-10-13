@@ -1,6 +1,6 @@
 import streamlit as st
 
-pesquisas = {
+pesquisas = [
     {
         "Titlo":"Regressão Linear",
         "Descrição":'''
@@ -9,8 +9,7 @@ pesquisas = {
         "LinkPDF":"https://drive.google.com/file/d/1JNJOLPRZf5BPP0LJ-_xJmyn6wJ2piySz/view?usp=sharing",
         "Colaboratory":"https://colab.research.google.com/drive/1BH-e5sjW2BUfTM4f3SNXYFFu13CQJoUs?usp=sharing"
     },
-    
-}
+]
 
 class Pesquisas:
     
