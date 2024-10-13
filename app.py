@@ -7,7 +7,7 @@ from paginas.Pesquisas import *
 from paginas.pessoal import *
 from paginas.Trabalhos_C import *
 from paginas.Pesquisas import *
-S
+
 
 class Main():
     
@@ -51,7 +51,7 @@ class Main():
             EstudoGuiados()
         
         if st.sidebar.button("Pesquisa Autonamas"):
-            EstudoGuiados()
+            Pesquisas()
          
             
 if __name__ == "__main__":
