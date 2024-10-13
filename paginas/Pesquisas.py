@@ -25,7 +25,5 @@ Minhas pesquisas concentram-se principalmente em algoritmos de Machine Learning 
                         ### {pesq['Titlo']}  
                         {pesq['Descrição']}  
                         
-                        Documento PDF: [{pesq['Titlo']}]({pesq['LinkPDF']})
-                        
-                        Colaboratorio: [Link]({pesq['Colaboratory']})
+                        Documento PDF: [{pesq['Titlo']}]({pesq['LinkPDF']}) [Colaboratorio Link]({pesq['Colaboratory']})
                         """)
