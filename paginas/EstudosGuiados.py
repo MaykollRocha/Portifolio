@@ -20,6 +20,6 @@ class EstudoGuiados():
                     * Usando o gradiente descendente para reduzir a função custo
                     * Árvores de Decisão e Florestas Aleatórias
                     
-                    [Colaborátorio do Projeoto ](https://colab.research.google.com/drive/1qD9yALLQr6o0zQNJT36b5-wdv0YbysgP?usp=sharing)
+                    [Colaborátorio do Projeto ](https://colab.research.google.com/drive/1qD9yALLQr6o0zQNJT36b5-wdv0YbysgP?usp=sharing)
                     """)
     

@@ -3,10 +3,11 @@ import webbrowser
 import streamlit as st
 
 from paginas.EstudosGuiados import *
+from paginas.Pesquisas import *
 from paginas.pessoal import *
 from paginas.Trabalhos_C import *
-from paginas.Trabalhos_Py import *
-
+from paginas.Pesquisas import *
+S
 
 class Main():
     
@@ -47,7 +48,11 @@ class Main():
             
         st.sidebar.header("Data Ciencie")
         if st.sidebar.button("Estudos Guiados"):
-            EstudoGuiados() 
+            EstudoGuiados()
+        
+        if st.sidebar.button("Pesquisa Autonamas"):
+            EstudoGuiados()
+         
             
 if __name__ == "__main__":
     Main()
