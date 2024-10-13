@@ -26,5 +26,5 @@ Minhas pesquisas concentram-se principalmente em algoritmos de Machine Learning 
                         {pesq['Descrição']}  
                        """)
             st.markdown(f""" 
-                        Documento PDF: [{pesq['Titlo']}]({pesq['LinkPDF']}) [Colaboratorio Link]({pesq['Colaboratory']})
+                        Documento PDF: [{pesq['Titlo']}]({pesq['LinkPDF']}) | [Colaboratorio Link]({pesq['Colaboratory']})
                         """)
