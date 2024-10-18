@@ -46,11 +46,11 @@ class Main():
         if st.sidebar.button("Python"):
             Trabalhos_Py()    
             
-        st.sidebar.header("Data Ciencie")
+        st.sidebar.header("Ciência de Dados")
         if st.sidebar.button("Estudos Guiados"):
             EstudoGuiados()
         
-        if st.sidebar.button("Pesquisa Autonamas"):
+        if st.sidebar.button("Pesquisa Autônomas"):
             Pesquisas()
          
             
